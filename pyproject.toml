@@ -1,0 +1,43 @@
+# Copyright 2024 PYBROTOOLS authors.
+# See license.md file for details.
+
+[tool.poetry]
+name        = "pybrotools"
+version     = "0.0.1"
+description = "A Python package gathering tools for Clinical Science projects."
+authors     = ["Benjamin Robert <brobert.pc120@gmail.com>"]
+readme      = "readme.md"
+license     = "MIT"
+repository  = "https://github.com/brobertpc120/pybrotools.git"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ruff = "^0.5.5"
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length    = 79
+indent-width   = 4
+target-version = "py312"
+
+[tool.ruff.format]
+quote-style                = "double"
+indent-style               = "space"
+skip-magic-trailing-comma  = false
+line-ending                = "auto"
+docstring-code-format      = false
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint]
+select             = ["ALL"]
+ignore             = ["D203", "D213"]
+fixable            = ["ALL"]
+unfixable          = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"

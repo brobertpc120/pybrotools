@@ -1,0 +1,11 @@
+# Copyright 2024 PYBROTOOLS authors.
+# See license.md file for details.
+
+# Poetry temporary files
+.pytest_cache
+.ruff_cache
+.install.stamp
+poetry.lock
+
+# MacOS files
+.DS_Store
