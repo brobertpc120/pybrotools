@@ -14,6 +14,10 @@ repository  = "https://github.com/brobertpc120/pybrotools.git"
 python = "^3.12"
 ruff = "^0.5.5"
 pytest = "^8.3.2"
+loguru = "^0.7.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]
@@ -34,7 +38,7 @@ docstring-code-line-length = "dynamic"
 
 [tool.ruff.lint]
 select             = ["ALL"]
-ignore             = ["D203", "D213"]
+ignore             = []
 fixable            = ["ALL"]
 unfixable          = []
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"

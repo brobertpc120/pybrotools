@@ -2,10 +2,11 @@
 # See license.md file for details.
 
 # Poetry temporary files
-.pytest_cache
-.ruff_cache
 .install.stamp
 poetry.lock
+__pycache__
+.ruff_cache
+.pytest_cache
 
 # MacOS files
 .DS_Store

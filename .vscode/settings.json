@@ -30,6 +30,7 @@
         "docstrings",
         "doctests",
         "ipython",
+        "loguru",
         "pybrotools",
         "pyflakes",
         "pyproject",
